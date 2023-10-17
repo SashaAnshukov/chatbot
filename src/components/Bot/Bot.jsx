@@ -9,14 +9,14 @@ const Bot = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          chat_id: "180647202",
+          chat_id: "", //chatId
           text: "Hello world",
         }),
       };
 
       // Отправка запроса
       fetch(
-        "https://api.telegram.org/bot6361219714:AAFR9GOjseY5zrknZUZgaIb28DngeLMia14/sendMessage",
+        "https://api.telegram.org/bot/sendMessage", //idBot
         options
       )
         .then((response) => response.json())
